@@ -1,0 +1,86 @@
+<!-- Index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<title>“Datos Personales</title>
+</head>
+
+<body>
+	<h1>Datos Personales</h1>
+	<form action="formulario.php" method="post">
+
+		<div class="container1">
+			<label class="label50" for="nombre">Nombre:</label>
+			<input class="input50" type="text" id="nombre" name="nombre"><br><br>
+		</div>
+
+		<div class="container1">
+			<label class="label50" for="apellidos">Apellidos:</label>
+			<input class="input50" type="text" id="apellidos" name="apellidos"><br><br>
+		</div>
+
+		<div class="container1">
+			<label class="label50" for="clave">Clave:</label>
+			<input class="input50" type="password" id="clave" name="clave"><br><br>
+		</div>
+
+		<label class="input50" class="label50" for="estacion">Estación favorita del año:</label>
+
+		<input type="radio" id="primavera" name="estacion" value="Primavera">
+		<label for="primavera">Primavera</label>
+
+		<input type="radio" id="verano" name="estacion" value="Verano">
+		<label for="verano">Verano</label>
+
+		<input type="radio" id="otonio" name="estacion" value="Otoño">
+		<label for="otonio">Otoño</label>
+
+		<input type="radio" id="invierno" name="estacion" value="Invierno">
+		<label for="invierno">Invierno</label><br><br>
+
+		<label for="transporte">Medio de transporte que más utilizas:</label>
+		<select id="transporte" name="transporte">
+			<option value="">Seleccione una opción</option>
+			<option value="Autobús">Autobús</option>
+			<option value="Bicicleta">Bicicleta</option>
+			<option value="Metro">Metro</option>
+			<option value="Moto">Moto</option>
+			<option value="Patinete">Patinete</option>
+			<option value="Tren">Tren</option>
+		</select><br><br>
+
+		<label for="aficiones">Aficiones:</label>
+
+		<input type="checkbox" id="bailar" name="aficiones[]" value="Bailar">
+		<label for="bailar">Bailar</label>
+
+		<input type="checkbox" id="cantar" name="aficiones[]" value="Cantar">
+		<label for="cantar">Cantar</label>
+
+		<input type="checkbox" id="deporte" name="aficiones[]" value="Hacer deporte">
+		<label for="deporte">Hacer deporte</label>
+
+		<input type="checkbox" id="leer" name="aficiones[]" value="Leer">
+		<label for="leer">Leer</label>
+
+		<input type="checkbox" id="series" name="aficiones[]" value="Ver Series">
+		<label for="series">Ver Series</label>
+
+		<input type="checkbox" id="viajar" name="aficiones[]" value="Viajar">
+		<label for="viajar">Viajar</label><br><br>
+
+		<div class="observaciones-container">
+			<label for="observaciones">Observaciones:</label>
+			<textarea id="observaciones" name="observaciones"></textarea><br><br>
+		</div>
+
+		<input class="button" type="reset" value="Borrar">
+		<input class="button" type="submit" value="Enviar">
+	</form>
+
+</body>
+
+</html>

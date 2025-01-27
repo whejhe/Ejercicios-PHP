@@ -1,0 +1,23 @@
+Se pide que  completemos el proyecto de la calculadora utilizando matrices y constantes en el código.  En tu código debe aparecer
+
+    1 - Uso de matrices para almacenar al menos tres productos y sus datos: nombre, cantidad y precio unitario.
+
+    2 - Constantes: define las constantes DESCUENTO_PEQUENO, LIMITE_DESCUENTO y LIMITE_COMPRA_GRANDE 
+        para almacenar valores fijos, como los límites y el porcentaje de descuento. 
+
+    3 - Operaciones aritméticas: sigue realizando las operaciones de multiplicación entre cantidad y 
+        precio unitario para calcular el total sin descuento, y luego se aplica un descuento del 10% si el total supera las 50 unidades.
+
+    4 - Formateo de números: usa number_format() para asegurar que los valores monetarios 
+        (precio y total) se muestren con dos decimales.
+
+    5 - Concatenación de cadenas: usa el operador . para concatenar cadenas en el resumen de la compra.
+
+    6 - Uso de operadores lógicos: Usa el operador > se utilizó para determinar si el total sin descuento 
+        supera los 50 (para aplicar descuento) o los 100 (para determinar si es una compra grande).
+
+    7 - Saltos de línea y caracteres especiales: Usa  para manejar saltos de línea en la salida HTML,  \n y 
+        luego la función nl2br() para convertir esos saltos a etiquetas <br>.
+
+    8 - Conversión de tipos de datos: realiza conversiones explícitas de float a string y de integer a 
+        float para ilustrar cómo cambiar los tipos de variables en PHP.

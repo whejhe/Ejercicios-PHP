@@ -1,0 +1,71 @@
+Ejercicio 1
+Hacer un código con bucles anidados de variables independientes, donde la variable del bucle
+exterior ($i) tome valores numéricos entre 1 y 3, y la del bucle interior ($j) valores entre a y d.
+Los resultados se deben ver de la siguiente forma:
+Sentencia de la variable $i incluyendo el valor
+Sentencia de la variable $j incluyendo el valor
+Sentencia de la variable $j incluyendo el valor
+…
+Sentencia de la variable $i incluyendo el valor
+Sentencia de la variable $j incluyendo el valor
+Sentencia de la variable $j incluyendo el valor
+…
+
+
+Ejercicio 2
+Hacer un código con bucles anidados de variables dependientes que simule lo siguiente:
+- Tienes 2 dados
+- Tiras el primero.
+- Tiras el segundo tantas veces como el valor obtenido del dado 1.
+- Vuelves a tirar el primer dado y repetimos la operación.
+- El primer dado, lo tiramos 3 veces.
+Mostrar los datos de la siguiente manera:
+Sentencia del primer dado incluyendo el valor en la primera tirada
+Sentencia del segundo dado incluyendo el valor
+Sentencia del segundo dado incluyendo el valor
+…
+Sentencia del primer dado incluyendo el valor en la segunda tirada
+Sentencia del segundo dado incluyendo el valor
+Sentencia del segundo dado incluyendo el valor
+…
+Sentencia del primer dado incluyendo el valor en la segunda tirada
+Sentencia del segundo dado incluyendo el valor
+Sentencia del segundo dado incluyendo el valor
+…
+
+
+Ejercicio 3
+Crear un código para calcular el factorial de un número, usando la función FOR.
+
+
+Ejercicio 4
+Escribe un programa que cada vez que se ejecute genere un número aleatorio entre 1 y 10.
+Acontinuación guarde en una matriz la tabla de multiplicar de dicho número. Obtén el valor
+mínimo y máximo de la matriz generada.
+NOTA: Para generar la matriz utiliza la función RANGE.
+
+
+Ejercicio 5
+Dadas las siguientes tablas con nombre y edad de los alumnos de dos clases diferentes:
+Clase A         Clase B
+Nombre Edad     Nombre Edad
+Juan 21         Jaime 27
+María 19        Luisa 21
+Pedro 24        Aitor 33
+Antonio 30      Macarena 22
+Carmen 24       María 27
+Carlos 26       Pedro 28
+Lucía 22        Juan 24
+- Crea dos arrays independientes para guardar los datos de cada una de las
+tablasanteriores y muestra por pantalla la información de ambas.
+- A continuación une ambas tablas en una sola y muestra los datos de esta nueva tabla.
+
+
+Ejercicio 6
+Generar una matriz con el conjunto de números primos que hay entre dos números
+enterospositivos y mostrarlo en pantalla.
+
+
+Ejercicio 7
+Escriba un programa que muestre una secuencia aleatoria de N bits y su secuencia
+complementaria

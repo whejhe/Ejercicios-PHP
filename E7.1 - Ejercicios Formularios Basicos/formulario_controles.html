@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario con Controles</title>
+</head>
+<body>
+    <h1>Formulario con Controles</h1>
+    <form action="procesar_controles.php" method="post">
+        <label for="texto">Caja de texto:</label>
+        <input type="text" id="texto" name="texto"><br>
+
+        <label for="textarea">Área de texto:</label>
+        <textarea id="textarea" name="textarea"></textarea><br>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password"><br>
+
+        <label>Casillas de verificación:</label><br>
+        <input type="checkbox" id="check1" name="check[]" value="opcion1">
+        <label for="check1">Opción 1</label><br>
+        <input type="checkbox" id="check2" name="check[]" value="opcion2">
+        <label for="check2">Opción 2</label><br>
+
+        <label>Botones radio:</label><br>
+        <input type="radio" id="radio1" name="radio" value="opcion1">
+        <label for="radio1">Opción 1</label><br>
+        <input type="radio" id="radio2" name="radio" value="opcion2">
+        <label for="radio2">Opción 2</label><br>
+
+        <label for="select">Menú desplegable:</label>
+        <select id="select" name="select">
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body{
+    background-color: #d6d4d4;
+}
+
+.container{
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #888888;
+    padding: 2em;
+    margin: 2em;
+    background-color: rgb(235, 232, 232);
+    width: 60%;
+    margin: 100px auto;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    color: rgb(29, 28, 28);
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px #888888;
+}
+
+p{
+    text-align: center;
+    font-family: monospace;
+    font-size: 2em;
+    color: rgb(29, 28, 28);
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px #888888;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+button{
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    color: whitesmoke;
+    background-color: rgb(34, 33, 33);
+    display: block;
+    margin: auto;
+}
+
+button:hover{
+    background-color: red;
+    cursor: pointer;
+}

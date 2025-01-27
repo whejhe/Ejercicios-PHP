@@ -1,0 +1,50 @@
+Programa un gestor de inventariado de producto. El código debe:
+
+    - Comparar inventarios de diferentes proveedores.
+    - Unir y organizar las listas de productos.
+    - Eliminar productos duplicados.
+    - Contar cuántos productos hay de cada categoría
+    - Ordenar los productos por precio.
+    - Dividir el inventario de la tienda en secciones de 2 elementos cada uno
+    - Buscar y contar elementos en los arrays-->Buscar un producto específico en el inventario (por nombre)
+    - Reindexar inventario y mostrar los nuevos índices
+    - Dividir el inventario en secciones más manejables.
+    - Generar un informe estadístico del inventario actual (con claves como nombres de productos).
+
+En el programa debes
+
+    Definir los siguientes Arrays:
+        Inventario actual.
+        Inventario del proveedor A.
+        Inventario del proveedor B.
+
+    Implementar las siguientes funciones
+        Comparar inventarios (array_diff, array_diff_assoc, array_diff_key).
+        Unir inventarios (array_merge, array_merge_recursive).
+        Contar productos por categorías (array_count_values).
+        Ordenar productos por precio (asort, arsort).
+        Eliminar productos duplicados (array_unique).
+        Rellenar el inventario con nuevos productos (array_fill, range).
+        Dividir en secciones (array_chunk).
+        Generar informes.
+
+Os dejo varias tablas con el inventariado actual de la tienda y el de dos proveedores más
+
+INVENTARIADO ACTUAL DE LA TIENDA
+Producto 	Precio 	Categoría   Cantidad
+Teclado 	20 	    Electrónica 	4
+Ratón 	    15 	    Electrónica 	10
+Monitor 	100 	Electrónica 	3
+Silla 	    80 	    Muebles 	    5
+
+INVENTARIADO PROVEEDOR A
+Producto 	Precio 	Categoría   Cantidad
+Ratón 	    10 	    Electrónica 	20
+Lámpara 	25 	    Iluminación 	15
+Escritorio 	50 	    Muebles 	    2
+
+INVENTARIADO PROVEEDOR B
+Producto 	Precio 	Categoría   Cantidad
+Monitor 	92 	    Electrónica 	8
+Auriculares 30 	    Electrónica 	20
+Lámpara 	20 	    Iluminación 	5
