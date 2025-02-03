@@ -1,22 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>Sistema de Descarga de Archivos</title>
 </head>
 <body>
-    <h1>Descargar archivo en texto plano</h1>
-    <form action="Pdf.php" method="post">
-        <label for="filename">Nombre del archivo:</label>
-        <input class="inputName" type="text" name="filename" id="filename">
-        <br>
+    <h1>Sistema de Descarga de Archivos Personalizado</h1>
 
-        <label for="contenido">Contenido</label>
-        <textarea name="contenido" id="Contenido"></textarea>
+    <!-- Formulario para descargar archivo de texto plano -->
+    <form action="download_text.php" method="post">
+        <h2>Descargar archivo de texto plano</h2>
+        <label for="filename">Nombre del archivo:</label>
+        <input type="text" name="filename" id="filename" required>
         <br>
-        <input class="button" type="submit" value="Descargar">
+        <label for="contenido">Contenido:</label>
+        <textarea name="contenido" id="contenido" rows="5" cols="30" required></textarea>
+        <br>
+        <input type="submit" value="Descargar">
+    </form>
+
+    <!-- Formulario para descargar archivo PDF -->
+    <form action="Pdf.php" method="post">
+        <h2>Descargar archivo PDF</h2>
+        <label for="filename_pdf">Nombre del archivo:</label>
+        <input type="text" name="filename" id="filename_pdf" required>
+        <br>
+        <label for="titulo_pdf">Título del PDF:</label>
+        <input type="text" name="tituloPDF" id="titulo_pdf" required>
+        <br>
+        <label for="contenido_pdf">Contenido:</label>
+        <textarea name="contenido" id="contenido_pdf" rows="5" cols="30" required></textarea>
+        <br>
+        <input type="submit" value="Generar y Descargar PDF">
+    </form>
+
+    <!-- Formulario para descargar imágenes -->
+    <form action="download_image.php" method="get">
+        <h2>Descargar imagen</h2>
+        <label for="format">Selecciona el formato de la imagen:</label>
+        <select name="format" id="format" required>
+            <option value="jpeg">JPEG</option>
+            <option value="png">PNG</option>
+            <option value="gif">GIF</option>
+        </select>
+        <br>
+        <input type="submit" value="Descargar Imagen">
+    </form>
+
+    <!-- Formulario para descargar archivo ZIP -->
+    <form action="download_zip.php" method="post">
+        <h2>Descargar archivo ZIP</h2>
+        <p>Este ZIP contendrá varios archivos de ejemplo.</p>
+        <input type="submit" value="Generar y Descargar ZIP">
     </form>
 </body>
 </html>
