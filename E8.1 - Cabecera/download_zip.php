@@ -1,14 +1,15 @@
 <?php
-require __DIR__ . '/vendor/autoload.php';
-
-use Nelexa\Zip\ZipFile;
+// download_zip.php
 
 // Crear un archivo ZIP temporal
 $zipPath = tempnam(sys_get_temp_dir(), 'zip') . '.zip';
 
 try {
-    // Crear un objeto ZipFile
-    $zip = new ZipFile($zipPath);
+    // Crear un nuevo archivo ZIP
+    $zip = new \ZipArchive();
+    if ($zip->open($zipPath, \ZipArchive::CREATE) !== true) {
+        throw new Exception('No se pudo crear el archivo ZIP.');
+    }
 
     // Agregar archivos al ZIP
     $files = [
@@ -17,7 +18,7 @@ try {
     ];
 
     foreach ($files as $filename => $content) {
-        $zip->addFromString($filename, $content);
+        $zip->addFromString($filename, $content); // Agregar contenido como cadena
     }
 
     // Cerrar el archivo ZIP
@@ -30,12 +31,12 @@ try {
 
     // Enviar el archivo ZIP al navegador
     readfile($zipPath);
+
+    // Eliminar el archivo ZIP temporal después de enviarlo
+    unlink($zipPath);
 } catch (Exception $e) {
     // Capturar errores y mostrar un mensaje
     echo "Error al crear el archivo ZIP: " . $e->getMessage();
 }
-
-// Eliminar el archivo ZIP temporal después de enviarlo
-unlink($zipPath);
 
 exit();
