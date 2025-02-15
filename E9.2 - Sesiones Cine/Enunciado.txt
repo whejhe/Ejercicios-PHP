@@ -1,0 +1,69 @@
+Programa la página de un pequeño cine particular. 
+En tu programación debes tener en cuenta las siguientes páginas en php:
+
+    - index.php: Página principal del cine con todas las opciones disponibles.
+    (Propón al menos 3 películas/día y 3 sesiones/película)
+    - Hijos de los Hombres
+    - Deseando Amar
+    - The Rocky Horror Picture Show
+    
+    - seleccion_pelicula.php: Una vez seleccionada la película deben
+     mostrarse los horarios disponibles para la película seleccionada.
+    
+    - seleccion_asientos.php: Seleccionada película y sesión , debemos 
+    poder seleccionar nuestros asientos. La selección de asientos debe 
+    garantizarse durante un tiempo ( vamos a poner 1 min … para que podamos comprobarlo ), 
+    en cuyo caso se cerrará la sesión de selección y se informará al usuario con un mensaje.
+
+    - pago.php: Seleccionado película, sesión y asientos, debe mostrarse un resumen 
+    del total de la compra y simular que vamos a pagar ( cambia de SID al realizar y 
+    acabar el pago ). . La página de pago debe cerrarse si en 1 min no se 
+    realiza el pago y se deberá también dejar disponibles los asientos seleccionados 
+    por el usuario y que no han sido ocupados .
+
+Tras el pago debe  aparecer por pantalla la opción de descargar las entradas en .txt
+
+    funciones.php: Esta página es opcional … he incluiría las funciones de tu código 
+    ( todas aquellas que necesites para para gestionar las películas, horarios, asientos, 
+    sesiones y pagos.)
+
+ADEMÁS 
+– Debes garantizar que tras la desconexión del usuario que ha pagado… 
+se borrarán todos los datos.
+
+- Recuerda sanear los registros
+
+ACTIVIDADES
+
+1- ESQUEMA FUNCIONAL Haz primero un pequeño esquema de las funcionalidades de cada programa y las interacciones que vas a definir entre ellos ( qué información se van a intercambiar, qué variables van a ser globales … ). Puedes hacerlo en papel … pero tendrás que subir la imagen a tu proyecto
+
+2- PAGINA INICIAL Y SELECCION DE PELÍCULA Programa 
+
+index.php: Página principal del cine con todas las opciones disponibles.( Propón al menos 3 películas/día y 3 sesiones/película)
+
+seleccion_pelicula.php: Una vez seleccionada la película deben mostrarse los horarios disponibles para la película seleccionada.
+
+3-SELECCION DE ASIENTOS
+
+seleccion_asientos.php: Seleccionada película y sesión , debemos poder seleccionar 
+nuestros asientos. La selección de asientos debe garantizarse durante un tiempo 
+( vamos a poner 1 min … para que podamos comprobarlo ), 
+en cuyo caso se cerrará la sesión de selección y se informará al usuario con un mensaje.
+
+Considera que todas las salas son iguales y disponen de 5 filas de 6 asientos cada una.
+
+Debes controlar que disponibilidad de asientos para que dos usuarios no escojan 
+los mismos sitios.
+
+4-PAGO
+
+pago.php: Seleccionado película, sesión y asientos, debe mostrarse un resumen 
+del total de la compra y simular que vamos a pagar ( cambia de SID al realizar y 
+acabar el pago ). La página de pago debe cerrarse si en 1 min no se realiza el 
+pago y se deberá también dejar disponibles los asientos seleccionados 
+por el usuario y que no han sido ocupados .
+
+Tras el pago debe  aparecer por pantalla la opción de descargar las entradas en .txt
+ENTREGA 
+Entrega cada una de las actividades por separado y según las vayas terminando. Guarda cada una de tus entregas con EsquemaFuncional_CarlosFernandezGonzalez.php ( .png o .zip en función del número de ficheros que entregues )
+ 

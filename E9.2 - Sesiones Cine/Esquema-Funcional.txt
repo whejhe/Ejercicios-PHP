@@ -1,0 +1,30 @@
+
+    index.php      
+                   
+ - Películas       
+ - Sesiones        
+ - Redirigir a     
+   seleccion_pelicula.php 
+          |
+          v
+ seleccion_pelicula.php 
+                   
+ - Mostrar sesiones
+ - Redirigir a     
+   seleccion_asientos.php 
+          |
+          v
+ seleccion_asientos.php 
+                       
+ - Mostrar asientos    
+ - Bloquear asientos   
+ - Tiempo de espera    
+ - Redirigir a pago.php 
+          |
+          v
+     pago.php      
+                   
+ - Resumen compra  
+ - Simular pago    
+ - Descargar entradas|
+ - Liberar asientos si no paga 
