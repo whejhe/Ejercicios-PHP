@@ -49,7 +49,7 @@ $pelicula_actual = $peliculas[$_SESSION['pelicula']];
     <p>Sesión: <?php echo htmlspecialchars($_SESSION['sesion']); ?></p>
     <p>Asientos seleccionados: <?php echo implode(", ", $_SESSION['asientos']); ?></p>
     <p>Total: <?php echo $total; ?>€</p>
-    <form action="descargar_entradas.php" method="POST">
+    <form action="descargar_entradasPDF.php" method="POST">
         <button type="submit">Descargar Entradas</button>
     </form>
 </body>

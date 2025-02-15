@@ -1,0 +1,40 @@
+# Ignorar archivos generados por Composer
+vendor/
+
+# Ignorar archivos de sesión y caché
+sessions/
+cache/
+
+# Ignorar archivos de configuración locales
+config.local.php
+
+# Ignorar archivos temporales y de sistema
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Ignorar archivos de depuración
+php_errors.log
+
+# Ignorar archivos específicos de IDEs
+# Para Visual Studio Code
+.vscode/
+# Para PHPStorm
+.idea/
+
+# Ignorar archivos de compilación o generación automática
+*.class.php
+*.compiled
+
+# Ignorar archivos de base de datos locales
+database.sqlite
+*.sql
+
+# Ignorar archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de entorno (si usas Laravel o frameworks similares)
+.env

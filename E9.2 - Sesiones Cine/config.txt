@@ -1,0 +1,5 @@
+Libreria Composer:
+composer require dompdf/dompdf
+
+Actualizar librerias:
+composer install
